@@ -1,0 +1,273 @@
+html,
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+
+.wrapper {
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.wrapper>h2 {
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 5px;
+}
+
+.wrapper>h3 {
+	text-align: center;
+	font-weight: 300;
+	font-style: italic;
+	color: #999;
+	font-size: 14px;
+	padding: 16px 0;
+}
+
+.wrapper>p {
+	text-align: justify;
+}
+
+
+header {
+	background-color: black;
+	color: white;
+	line-height: 1;
+}
+
+header>nav {
+	float: left;
+}
+
+header>nav>div {
+	float: left;
+	padding: 12px 20px;
+	cursor: pointer;
+	/* 커서가 손가락으로 바뀜 */
+}
+
+header>nav>div:hover {
+	background-color: #ccc;
+	color: #000;
+}
+
+header>span {
+	float: right;
+	padding: 12px 24px;
+	cursor: pointer;
+}
+
+header .fa-bars {
+	display: none;	
+}
+
+header>span:hover {
+	background-color: #ee2200;
+}
+
+.band-wrap {
+	padding: 50px 0;
+}
+
+.banner-wrap {
+	position: relative;
+}
+.banner {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	color: #fff;
+}
+.banner .content {position: absolute; bottom: 2rem; width: 100%;}
+.banner h3 {font-size: 1.5rem; padding: 1rem 0;}
+
+
+.member {
+	width: 33.3333%;
+	padding: 6%;
+	float: left;
+}
+
+.member>h4 {
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.member>img {
+	border-radius: 5px;
+}
+
+.tour-wrap {
+	background-color: #111;
+	padding: 50px 0;
+}
+
+.tour-wrap h2 {
+	color: #f1f1f1;
+}
+
+.ticket-wrap {
+	background-color: #fff;
+	margin: 30px auto;
+}
+
+.ticket-wrap>li {
+	padding: 12px;
+	color: #777;
+	border-bottom: 1px solid #ccc;
+}
+
+.soldout {
+	background-color: #ff3300;
+	color: #fff;
+	padding: 3px 6px;
+	margin-left: 12px;
+}
+
+.ticket-count {
+	background-color: #111;
+	color: #f1f1f1;
+	padding: 3px 8px;
+	border-radius: 50%;
+	float: right;
+}
+
+.city-wrap > :nth-child(2) {
+	margin: 0 2%;
+}
+
+.city {
+	float: left;
+	width: 32%;
+}
+
+.city-img:hover {
+	opacity: 0.75;
+}
+
+.city-conts {
+	background-color: #f8f8f8;
+	padding: 16px;
+}
+
+.city-conts > h4 {
+	padding: 8px 0 16px 0;
+	font-size: 16px;
+}
+.city-conts > h5 {
+	font-size: 16px;
+	font-weight: 300;
+	color: #666;
+}
+.city-conts > .btn-buy {
+	padding: 8px;
+	background-color: #111;
+	color: #f1f1f1;
+	display: inline-block; 
+	margin: 4px 0;
+	cursor: pointer;
+}
+.city-conts > .btn-buy:hover {
+	background-color: #ccc;
+	color: #111;
+}
+
+
+.contact-wrap {
+	padding: 50px 0;
+}
+.msg-wrap {
+	margin-top: 50px;
+}
+.info, .msg {
+	width: 50%;
+	float: left;
+}
+.info > li {
+	font-size: 16px;
+	padding: 6px;
+}
+.info span {
+	width: 40px;
+}
+
+.msg  > div {
+	padding: 4px;
+}
+.msg > div:first-child > input {
+	float: right;
+	width: 40%;
+}
+.msg input[name='username'] {
+	margin-right: 2%;
+}
+.msg > div:nth-child(2) > input {
+	width: 82%;
+}
+
+.msg input {
+	padding: 8px;
+}
+
+.footer {
+	padding: 80px 0;
+	color: #999;
+}
+
+.footer .fa {
+	font-size: 24px;
+	margin: 0 4px;
+}
+
+.footer > div:last-child {
+	padding: 8px 0;
+}
+
+/* 반응형 */
+@media screen and (max-width: 992px) {
+	
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+	header > nav > div:not(:first-child) {
+		display: none;
+	}
+	header .fa-bars {
+		display: block;	
+	}
+	header .fa-search {
+		display: none;	
+	}
+	.member {
+		width: 100%;
+	}
+	.city-wrap > :nth-child(2) {
+		margin: 1%;
+	}
+	.city {
+		width: 98%;
+		margin: 1%;
+	}
+	.info, .msg {
+		width: 100%;
+		padding: 0 1%;
+	}
+	.msg > div:first-child > input {
+		width: 100%;
+	}
+	.msg > div:first-child > input:first-child {
+		margin-bottom: 8px;
+	}
+	.msg input[name='username'] {
+		margin-right: 0;
+	}
+	.msg > div:nth-child(2) > input {
+		width: 100%;
+	}
+}
